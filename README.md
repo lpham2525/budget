@@ -14,6 +14,8 @@ Offline Functionality:
 
 When brought back online:
 
+![Screenshot](./public/img/snapshot2.png?raw=true "Budget Tracker")
+
   * Offline entries should be added to tracker.
 
 ## User Story
