@@ -40,6 +40,7 @@ const checkDatabase = () => {
           const store = transaction.objectStore('pending')
           store.clear()
         })
+        .catch(err => console.error(err))
     }
   }
 }

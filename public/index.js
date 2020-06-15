@@ -20,6 +20,7 @@ fetch("/api/transaction")
     populateTable();
     populateChart();
   });
+  .catch(err => console.error(err))
 
 function populateTotal() {
   // reduce transaction amounts to a single total value
