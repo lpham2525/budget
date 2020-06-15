@@ -1,3 +1,10 @@
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/service-worker.js')
+    console.log(serviceWorker)
+  })
+}
+
 let transactions = [];
 let myChart;
 
@@ -121,7 +128,7 @@ function sendTransaction(isAdding) {
       "Content-Type": "application/json"
     }
   })
-    .then(response => {    
+    .then(response => {
       return response.json();
     })
     .then(data => {

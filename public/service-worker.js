@@ -1,0 +1,25 @@
+
+self.addEventListener('install', event => {
+  event.waitUntil(caches.open('budget-cache-v1')
+    .then(cache => cache.addAll([
+      '/',
+      '/db.js',
+      '/index.js',
+      '/manifest.json',
+      '/public/icons/icon-192x192.png',
+      '/public/icons/icon-512x512.png'
+    ])))
+})
+
+self.addEventListener('fetch', event => {
+  event.respondWith(fetch(event.request)
+    .catch(err => {
+      return caches.match(event.request)
+        .then(match => {
+          if (match) {
+            return match
+          } else if (event.request.headers.get('accept').includes('text/html'))
+            return caches.match('/')
+        })
+    }))
+})
