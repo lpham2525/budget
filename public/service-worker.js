@@ -6,8 +6,8 @@ self.addEventListener('install', event => {
       '/db.js',
       '/index.js',
       '/manifest.json',
-      '/public/icons/icon-192x192.png',
-      '/public/icons/icon-512x512.png'
+      '/icons/icon-192x192.png',
+      '/icons/icon-512x512.png'
     ])))
 })
 
@@ -18,8 +18,9 @@ self.addEventListener('fetch', event => {
         .then(match => {
           if (match) {
             return match
-          } else if (event.request.headers.get('accept').includes('text/html'))
+          } else if (event.request.headers.get('accept').includes('text/html')) {
             return caches.match('/')
+          }
         })
     }))
 })
