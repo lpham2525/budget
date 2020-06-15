@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="theme-color" content="#317EFB">
+  <meta name="Description" content="Budget Tracker Application which allows users to enter in transactions and track the flow of their finances, even in areas with little or no connection to wi-fi. Also includes a graph that displays the change in cash flow.">
   <link rel="shortcut icon" href="icons/icon-192x192.png" type="image/x-icon">
-
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="styles.css">
 
@@ -20,8 +20,11 @@
     </div>
 
     <div class="form">
+      <label for="transaction-name"></label>
       <input type="text" id="t-name" placeholder="Name of transaction" />
+      <label for="amount"></label>
       <input type="number" min="0" id="t-amount" placeholder="Transaction amount" />
+      <br>
       <button id="add-btn"><i class="fa fa-plus buttons"></i> Add Funds</button>
       <button id="sub-btn"><i class="fa fa-minus"></i> Subtract Funds</button>
       <p class="error"></p>
