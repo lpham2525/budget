@@ -1,19 +1,15 @@
 # Unit 18 Performance Web Applications: Online/Offline Budget Trackers
 
-Giving users a fast and easy way to track their money is important, but allowing them to access that information anytime is even more important. Having offline functionality is paramount to our applications success.
-
-This assignment adds functionality to the existing Budget Tracker application to allow for offline access and functionality.
-
-The user will be able to add expenses and deposits to their budget with or without a connection. When entering transactions offline, they should populate the total when brought back online.
+Giving users a fast and easy way to track their money is important, but allowing them to access that information any time is even more important. Having offline functionality is paramount to our application's success. Enter the Budget Tracker, an application which allows the user to add expenses and deposits to their budget with or without a connection. When entering transactions offline, they should populate the total when brought back online.
 
 Link to live app: https://guarded-spire-68532.herokuapp.com/
 
 Offline Functionality:
 -------------------------------------------------------------
 
-  * Enter deposits offline
+  * Enter deposits offline: type in the name and amount of the deposit, then click on "Add Funds" button.
 
-  * Enter expenses offline
+  * Enter expenses offline: type in the name and amount of expenses, then click on "Subtract Funds" button.
 
 When brought back online:
 -------------------------------------------------------------------
