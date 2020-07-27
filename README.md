@@ -31,3 +31,7 @@ SO THAT my account balance is accurate when I am traveling
 GIVEN a user is on Budget App without an internet connection,
 WHEN the user inputs a withdrawal or deposit,
 THEN that transaction will be shown on the page and added to their transaction history when their connection is back online.
+
+Technologies Used
+---------------------------------------------------
+JavaScript, Node, Express, Compression, Mongoose, MongoDB
